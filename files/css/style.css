@@ -123,19 +123,23 @@ video.banner {
   transform: scale(1.02);
   -webkit-perspective: 1000;
 }
-.slider:hover .slick-dots { 
-  transform: scale(0.97);
-}
 .slide:focus { 
   outline: none;
 }
 .slick-dots {
-  bottom: -18px !important;
+  bottom: -17px !important;
   transition: all 0.3s ease;
   transform: translateZ(0);
 }
 .slick-dots li button:before {
   color: #fff !important;
+}
+.slick-slide {
+  margin: 0 27px;
+}
+/* the parent */
+.slick-list {
+  margin: 0 -27px;
 }
 .slide {
   position: relative;
@@ -143,8 +147,7 @@ video.banner {
   background: #fff;
   height: 250px;
   padding: 20px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-radius: 6px;
 }
 .slide .person {
   display: block;
@@ -267,7 +270,6 @@ footer .copyright {
   -moz-box-shadow: unset;
   box-shadow: unset;
   transition: background 0.4s ease, color 0.2s ease, opacity 0.8s ease !important;
-  padding-left: 35px;
 }
 .mobile {
   display: none; 
@@ -278,9 +280,10 @@ footer .copyright {
 }
 .navbar-nav {
   width: 100%;
-  display: block;
+  display: flex;
   text-align: center;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: flex-end;
 }
 .navbar-nav li {
   display: inline-block;
@@ -409,6 +412,10 @@ footer .copyright {
   .slick-dots {
     bottom: -18px !important;
   }
+  .slider:hover,
+  .slider:hover .slick-dots {
+    transform: none;
+  }
 }
 @media only screen and (max-width: 767px) {
   .navbar-brand.mobile {
@@ -432,7 +439,12 @@ footer .copyright {
   }
   .navbar-nav {
     height: 100vh;
-    background 
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -30px;
   }
   .navbar-nav li {
     float: left;
@@ -476,6 +488,17 @@ footer .copyright {
   .slider:hover {
     transform: scale(1.0);
   }
+  .slider { 
+    width: 500px;
+    height: 320px;
+  }
+  .slide {
+    overflow: hidden;
+    height: 300px;
+  }
+  .slick-dots {
+    bottom: -18px !important;
+  }
 }
 @media only screen and (max-width: 479px) {
   .navbar-brand {
@@ -489,11 +512,11 @@ footer .copyright {
   }
   .slider { 
     width: 360px;
-    height: 320px;
+    height: 340px;
   }
   .slide {
     overflow: hidden;
-    height: 300px;
+    height: 320px;
   }
   .slick-dots {
     bottom: -18px !important;
@@ -501,10 +524,32 @@ footer .copyright {
   .center-middle p {
     font-size: 14px;
   }
-  .navbar-nav {
-    padding-top: 75px;
+  .main_hero .boxing_header h1 {
+    font-size: 60px;
+  }
+  .navbar-brand.mobile {
+    left: 0px;
+  }
+  .navbar-toggle {
+    right: -6px;
+  }
+  .navbar-default .navbar-nav > li, .navbar-default .navbar-nav > li > a {
+    font-size: 26px;
   }
 }
 @media only screen and (max-width: 320px) {
-
+  .slider { 
+    width: 300px;
+    height: 370px;
+  }
+  .slide {
+    overflow: hidden;
+    height: 350px;
+  }
+  .slick-dots {
+    bottom: -18px !important;
+  }
+  footer .copyright {
+    font-size: 13px;
+  }
 }
