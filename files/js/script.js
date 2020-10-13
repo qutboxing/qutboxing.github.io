@@ -9,12 +9,17 @@ $(document).ready(function (){
 	  dots: true
 	});
 	setFooterHeight();
+	setCopyrightYear();
 });
 
+function setCopyrightYear(){
+	var theDate = new Date(); 
+ 	$(".year").text(theDate.getFullYear());
+}
 function setFooterHeight(){
 	$('.fixed_spacer').css('height', $('footer').outerHeight() + 'px');
 	if($(document).scrollTop() > 100){
-		$('footer').css('z-index', '-1');
+		$('footer').css('z-index', '1');
 	}
 	else {
 		$('footer').css('z-index', '-2');

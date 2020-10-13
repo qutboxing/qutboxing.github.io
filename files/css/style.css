@@ -214,8 +214,13 @@ footer {
   bottom: 0;
   left: 0;
   z-index: -2;
+  height: 220px;
 }
 footer .contact_icons {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-between;
   width: 150px;
@@ -224,6 +229,17 @@ footer .contact_icons {
 footer .contact_icons .icon {
   width: 40px;
   height: 40px;
+}
+footer .copyright {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Anton', sans-serif;
+  width: 100%;
+  margin-top: 50px;
+  color: #9b9b9b;
+  text-align: center;
 }
 .fixed_spacer {
   pointer-events: none;
