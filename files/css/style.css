@@ -49,6 +49,7 @@ p {
   height: 100vh;
   text-align: center;
   color: #fff;
+  z-index: 2;
 }
 .video_overlay {
   position: relative;
@@ -99,6 +100,7 @@ video.banner {
   background: #17345e;
   padding-top: 30px;
   padding-bottom: 50px;
+  z-index: 2;
 }
 
 /*SLIDER*/
@@ -223,7 +225,9 @@ footer .contact_icons .icon {
   width: 40px;
   height: 40px;
 }
-
+.fixed_spacer {
+  pointer-events: none;
+}
 /*----------------------------------------------
 ------------------NAVBAR STYLES-----------------
 ------------------------------------------------*/
