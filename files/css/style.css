@@ -82,6 +82,7 @@ video.banner {
   font-family: 'Old Sport';
   font-size: 80px;
   letter-spacing: 2px;
+  transition: all 0.5s ease;
 }
 .main_hero .boxing_header h4 {
   font-size: 20px;
@@ -239,6 +240,9 @@ footer .contact_icons .icon {
 }
 footer .contact_icons .ig .icon {
   border-radius: 12px;
+}
+footer .contact_icons .gm .icon {
+  background-size: 50% 100%;
 }
 footer .contact_icons .icon:hover {
   background: #283d8a;
@@ -512,8 +516,8 @@ footer .copyright {
     transition: unset;
   }
   .navbar-default .navbar-nav > li, .navbar-default .navbar-nav > li > a {
-    font-size: 19px;
-    padding-top: 0px; 
+    font-size: 20px;
+    padding-top: 0px;
     padding-bottom: 0px; 
   }
   .navbar-nav {
