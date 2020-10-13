@@ -242,7 +242,9 @@ footer .contact_icons .ig .icon {
   border-radius: 12px;
 }
 footer .contact_icons .gm .icon {
-  background-size: 50% 100%;
+  margin-top: 3px;
+  height: 34px;
+  margin-top: 3px;
 }
 footer .contact_icons .icon:hover {
   background: #283d8a;
