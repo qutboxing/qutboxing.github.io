@@ -118,17 +118,19 @@ video.banner {
   transform: translateZ(0);
 }
 .slider:hover { 
-  transform: scale(1.02, 1.02);
-/*  -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);*/
+  transform: scale(1.02);
   -webkit-perspective: 1000;
+}
+.slider:hover .slick-dots { 
+  transform: scale(0.97);
 }
 .slide:focus { 
   outline: none;
 }
 .slick-dots {
   bottom: -18px !important;
+  transition: all 0.3s ease;
+  transform: translateZ(0);
 }
 .slick-dots li button:before {
   color: #fff !important;
