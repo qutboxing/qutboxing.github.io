@@ -133,6 +133,7 @@ video.banner {
 }
 .slick-dots li button:before {
   color: #fff !important;
+  transition: opacity 0.7s ease;
 }
 .slick-slide {
   margin: 0 27px;
@@ -232,6 +233,40 @@ footer .contact_icons {
 footer .contact_icons .icon {
   width: 40px;
   height: 40px;
+}
+.fb .link_info,
+.ig .link_info,
+.gm .link_info {
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+  font-family: 'Anton', sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+.fb .link_info {
+  transform: translateX(-50px) translateY(-30px);
+  opacity: 0;
+}
+.fb:hover .link_info {
+  transform: translateX(-90px) translateY(-30px);
+  opacity: 1;
+}
+.ig .link_info {
+  transform: translateX(-20px) translateY(-60px);
+  opacity: 0;
+}
+.ig:hover .link_info {
+  transform: translateX(-20px) translateY(-80px);
+  opacity: 1;
+}
+.gm .link_info {
+  transform: translateX(20px) translateY(-30px);
+  opacity: 0;
+}
+.gm:hover .link_info {
+  transform: translateX(60px) translateY(-30px);
+  opacity: 1;
 }
 footer .copyright {
   position: absolute;
