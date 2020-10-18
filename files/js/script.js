@@ -40,6 +40,8 @@ function centerSlider(){
 
 //Handle resizes by dynamically changes elements
 $(window).resize(function (){
-	centerSlider();
+	setTimeout(function(){
+		centerSlider();
+	}, 300);
     setFooterHeight();
 });
