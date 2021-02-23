@@ -33,15 +33,13 @@ function setFooterHeight(){
 		}
 	});
 }
-function centerSlider(){
-	var currentSlide = $('.slider').slick('slickCurrentSlide');
-    currentSlide = $('.slider').slick('slickGoTo', currentSlide + 1);
-}
 
 //Handle resizes by dynamically changes elements
 $(window).resize(function (){
 	setTimeout(function(){
-		centerSlider();
-	}, 300);
+		if($(window).width() < 991){
+			$('.slider')[0].slick.refresh();
+		}
+	}, 100);
     setFooterHeight();
 });

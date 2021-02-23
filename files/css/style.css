@@ -342,7 +342,6 @@ footer .copyright {
   align-items: flex-end;
 }
 .navbar-nav li {
-  display: inline-block;
   float: none;
   display: inline-block !important;
 }
